@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfolio Gringo</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Gringo</h1>
+    </header>
+    <main>
+        <section class="project-grid">
+            <!-- Example Project Card -->
+            <div class="project-card" onclick="openSidebar('Project Title 1', 'Description for project 1', 'https://www.instagram.com/reel/DExIfbCNnZS/')">
+                <div class="project-thumbnail">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DExIfbCNnZS/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+                        <a href="https://www.instagram.com/reel/DExIfbCNnZS/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">View on Instagram</a>
+                    </blockquote>
+                </div>
+                <h2>Project Title 1</h2>
+            </div>
+            <div class="project-card" onclick="openSidebar('Project Title 2', 'Description for project 2', 'https://www.instagram.com/reel/DExIfbCNnZS/')">
+                <div class="project-thumbnail">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DExIfbCNnZS/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+                        <a href="https://www.instagram.com/reel/DExIfbCNnZS/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">View on Instagram</a>
+                    </blockquote>
+                </div>
+                <h2>Project Title 2</h2>
+            </div>
+            <!-- Add more project cards as needed -->
+        </section>
+        <aside id="sidebar" class="sidebar">
+            <button onclick="closeSidebar()">Close</button>
+            <h2 id="sidebar-title"></h2>
+            <p id="sidebar-description"></p>
+            <div id="sidebar-video"></div>
+        </aside>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
